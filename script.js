@@ -3,12 +3,28 @@
 // Interactive & Dynamic Features
 // ===========================
 
-// ===== SCROLL TO ABOUT FUNCTION =====
-function smoothScrollToAbout() {
-    const aboutSection = document.getElementById('about');
-    if (aboutSection) {
-        aboutSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+// ===== SCROLL TO NEXT SECTION FUNCTION =====
+function scrollToNextSection() {
+    const sections = Array.from(document.querySelectorAll('section'));
+    const currentScrollPos = window.scrollY + window.innerHeight / 2;
+
+    // Find the next section below the current scroll position
+    const nextSection = sections.find(section => {
+        const sectionTop = section.offsetTop;
+        return sectionTop > currentScrollPos;
+    });
+
+    if (nextSection) {
+        nextSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    } else if (sections.length > 0) {
+        // If no section found below, scroll to the first section
+        sections[0].scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
+}
+
+// Keep the old function name for backward compatibility
+function smoothScrollToAbout() {
+    scrollToNextSection();
 }
 
 // ===== NAVIGATION FUNCTIONALITY =====
@@ -38,6 +54,17 @@ function initializeNavigation() {
             hamburger.classList.remove('active');
             updateActiveNavLink(this);
         });
+    });
+
+    // Close menu when clicking outside (but not on nav-container or menu items)
+    document.addEventListener('click', function(event) {
+        const isClickInsideNav = event.target.closest('.nav-container');
+        const isClickOnNavMenu = event.target.closest('.nav-menu');
+
+        if (!isClickInsideNav && !isClickOnNavMenu && navMenu.classList.contains('active')) {
+            navMenu.classList.remove('active');
+            hamburger.classList.remove('active');
+        }
     });
 }
 
