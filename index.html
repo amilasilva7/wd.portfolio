@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amila Silva | Premium Full-Stack Web Developer & Digital Marketing Expert</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-text">AS</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#hero" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#expertise" class="nav-link">Expertise</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link cta-btn">Get In Touch</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Transform Your Digital Vision Into Reality</h1>
+                <p class="hero-subtitle">
+                    Senior Full-Stack Developer | Digital Marketing Strategist | Cloud Architecture Expert
+                </p>
+                <p class="hero-description">
+                    I craft world-class web experiences and scalable enterprise systems that drive real business growth.
+                    With 6+ years of hands-on expertise and a passion for innovation, let's build something extraordinary together.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Start Your Project</a>
+                    <a href="#experience" class="btn btn-secondary">View My Work</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <h3>6+</h3>
+                        <p>Years Experience</p>
+                    </div>
+                    <div class="stat">
+                        <h3>50+</h3>
+                        <p>Projects Delivered</p>
+                    </div>
+                    <div class="stat">
+                        <h3>100%</h3>
+                        <p>Client Satisfaction</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-card">
+                    <div class="profile-img-container">
+                        <img src="IMG_4653.JPG" alt="Amila Silva" class="profile-img">
+                        <div class="profile-badge">Available Now</div>
+                    </div>
+                    <div class="profile-info">
+                        <h2>Amila Silva</h2>
+                        <p>Dubai, UAE 🌍</p>
+                        <p class="available">✓ Available Immediately</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="scroll-indicator" onclick="smoothScrollToAbout()">
+            <span>Scroll to explore</span>
+            <svg class="scroll-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M12 5v14M19 12l-7 7-7-7"/>
+            </svg>
+        </button>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Building Digital Excellence</h3>
+                    <p>
+                        I'm a passionate full-stack developer who transforms complex business challenges into elegant,
+                        scalable solutions. My journey spans from crafting beautiful user interfaces to architecting
+                        robust backend systems that handle enterprise-level demands.
+                    </p>
+                    <p>
+                        Beyond code, I bring strategic digital marketing expertise and cloud architecture proficiency
+                        to ensure your projects don't just work—they thrive in competitive markets. Whether it's optimizing
+                        for organic growth through technical SEO or scaling infrastructure on AWS, I've got you covered.
+                    </p>
+                    <p>
+                        What drives me? The intersection of creative design, solid engineering, and measurable business impact.
+                        Every project is an opportunity to exceed expectations and deliver value that lasts.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-rocket"></i>
+                            <span>Innovation-Driven</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Security-First</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Performance-Focused</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-users"></i>
+                            <span>Team Collaborator</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-highlights-visual">
+                    <div class="highlight-card">
+                        <div class="card-icon"><i class="fas fa-code"></i></div>
+                        <h4>Full-Stack Mastery</h4>
+                        <p>Frontend to backend, I deliver complete solutions with meticulous attention to detail.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="card-icon"><i class="fas fa-cloud"></i></div>
+                        <h4>Cloud Architecture</h4>
+                        <p>AWS expert designing scalable, resilient systems ready for production at any scale.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="card-icon"><i class="fas fa-chart-pie"></i></div>
+                        <h4>Digital Growth</h4>
+                        <p>Strategic SEO, analytics, and marketing integration that drives real business results.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="card-icon"><i class="fas fa-lock"></i></div>
+                        <h4>Security & Compliance</h4>
+                        <p>Building secure systems with OWASP best practices and enterprise-grade protection.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertise Section -->
+    <section id="expertise" class="expertise">
+        <div class="container">
+            <h2 class="section-title">Areas of Expertise</h2>
+            <div class="expertise-grid">
+                <div class="expertise-card">
+                    <div class="expertise-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Frontend Development</h3>
+                    <p>Modern, responsive interfaces with React, JavaScript, and cutting-edge CSS. Crafting experiences that users love.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">HTML/CSS</span>
+                        <span class="tech-tag">Responsive Design</span>
+                    </div>
+                </div>
+
+                <div class="expertise-card">
+                    <div class="expertise-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>Backend Development</h3>
+                    <p>Scalable APIs and microservices built with Node.js, Java, Laravel. Optimized databases and lightning-fast responses.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">Spring Boot</span>
+                        <span class="tech-tag">Laravel</span>
+                        <span class="tech-tag">REST APIs</span>
+                    </div>
+                </div>
+
+                <div class="expertise-card">
+                    <div class="expertise-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Cloud & DevOps</h3>
+                    <p>AWS infrastructure, Docker containerization, CI/CD pipelines. Enterprise-grade deployment and scaling.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">AWS</span>
+                        <span class="tech-tag">Docker</span>
+                        <span class="tech-tag">Kubernetes</span>
+                        <span class="tech-tag">CI/CD</span>
+                    </div>
+                </div>
+
+                <div class="expertise-card">
+                    <div class="expertise-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Database Architecture</h3>
+                    <p>Optimized database design, query performance tuning, indexing strategies. Data that scales with your business.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">Redis</span>
+                        <span class="tech-tag">Optimization</span>
+                    </div>
+                </div>
+
+                <div class="expertise-card">
+                    <div class="expertise-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>SEO & Digital Marketing</h3>
+                    <p>Technical SEO, Google Analytics, GTM implementation. Building products optimized for organic growth.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Technical SEO</span>
+                        <span class="tech-tag">Google Analytics</span>
+                        <span class="tech-tag">GTM</span>
+                        <span class="tech-tag">Paid Campaigns</span>
+                    </div>
+                </div>
+
+                <div class="expertise-card">
+                    <div class="expertise-icon">
+                        <i class="fas fa-shield"></i>
+                    </div>
+                    <h3>Security & Best Practices</h3>
+                    <p>OWASP Top 10 compliance, vulnerability management, secure code practices. Your data stays protected.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">OWASP</span>
+                        <span class="tech-tag">Vulnerability Management</span>
+                        <span class="tech-tag">Secure Code</span>
+                        <span class="tech-tag">Compliance</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Professional Journey</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Senior Web Developer</h3>
+                            <span class="timeline-date">April 2024 – October 2025</span>
+                        </div>
+                        <p class="timeline-company">Intervest Software Technologies, Colombo, Sri Lanka</p>
+                        <ul class="timeline-achievements">
+                            <li>Led development of custom WordPress themes with advanced functionality and security hardening</li>
+                            <li>Managed social media platforms and orchestrated large-scale paid campaigns on Meta (reaching 1M+ users)</li>
+                            <li>Implemented Google Tag Manager for precise campaign attribution and performance tracking</li>
+                            <li>Optimized REST APIs, improving response times by 40% through database query optimization</li>
+                            <li>Built React frontend components integrated with Spring Boot microservices architecture</li>
+                            <li>Maintained 10+ production sites including WooCommerce stores, news portals, and enterprise platforms</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Web Developer</h3>
+                            <span class="timeline-date">September 2021 – April 2024</span>
+                        </div>
+                        <p class="timeline-company">Intervest Software Technologies, Colombo, Sri Lanka</p>
+                        <ul class="timeline-achievements">
+                            <li>Designed and deployed landing pages optimized for conversions with comprehensive analytics tracking</li>
+                            <li>Implemented on-page SEO strategies, increasing organic traffic by 60%</li>
+                            <li>Developed full-stack applications using Laravel backend and React frontend components</li>
+                            <li>Built Spring Boot microservices for mobile app backend, deployed on AWS infrastructure</li>
+                            <li>Enhanced application security by eliminating hundreds of vulnerabilities through dependency upgrades</li>
+                            <li>Improved frontend performance and mobile responsiveness across all projects</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Web Developer</h3>
+                            <span class="timeline-date">March 2020 – September 2021</span>
+                        </div>
+                        <p class="timeline-company">Auradot Private Limited, Colombo, Sri Lanka</p>
+                        <ul class="timeline-achievements">
+                            <li>Architected and developed REST APIs for admin dashboard serving 10+ managers with real-time analytics</li>
+                            <li>Created Java-based business intelligence dashboard with advanced data visualization</li>
+                            <li>Built student management system serving private school with 500+ users</li>
+                            <li>Designed and implemented 15+ RESTful endpoints following OpenAPI 3.0 specifications</li>
+                            <li>Developed MERN stack application with JWT authentication for enterprise user management</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Arsenal</h2>
+
+            <div class="skills-showcase">
+                <div class="skills-category">
+                    <h3><i class="fas fa-code"></i> Tech Stack</h3>
+                    <div class="skill-badges">
+                        <span class="badge">WordPress</span>
+                        <span class="badge">React</span>
+                        <span class="badge">React Native</span>
+                        <span class="badge">JavaScript</span>
+                        <span class="badge">Node.js</span>
+                        <span class="badge">Express.js</span>
+                        <span class="badge">Java</span>
+                        <span class="badge">Spring Boot</span>
+                        <span class="badge">Laravel</span>
+                        <span class="badge">PHP</span>
+                        <span class="badge">HTML/CSS</span>
+                        <span class="badge">REST APIs</span>
+                        <span class="badge">Microservices</span>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h3><i class="fas fa-database"></i> Databases & Caching</h3>
+                    <div class="skill-badges">
+                        <span class="badge">PostgreSQL</span>
+                        <span class="badge">MySQL</span>
+                        <span class="badge">MongoDB</span>
+                        <span class="badge">Oracle</span>
+                        <span class="badge">Redis</span>
+                        <span class="badge">Query Optimization</span>
+                        <span class="badge">Indexing</span>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h3><i class="fas fa-cloud"></i> Cloud & DevOps</h3>
+                    <div class="skill-badges">
+                        <span class="badge">AWS (EC2, ECS, EKS)</span>
+                        <span class="badge">Lambda</span>
+                        <span class="badge">API Gateway</span>
+                        <span class="badge">Cognito</span>
+                        <span class="badge">Docker</span>
+                        <span class="badge">Kubernetes</span>
+                        <span class="badge">Kafka</span>
+                        <span class="badge">Jenkins</span>
+                        <span class="badge">CI/CD</span>
+                        <span class="badge">VPS Management</span>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h3><i class="fas fa-tools"></i> Tools & Platforms</h3>
+                    <div class="skill-badges">
+                        <span class="badge">Git</span>
+                        <span class="badge">Google Analytics</span>
+                        <span class="badge">Google Tag Manager</span>
+                        <span class="badge">Meta Business</span>
+                        <span class="badge">Claude Code</span>
+                        <span class="badge">Copilot</span>
+                        <span class="badge">Canva</span>
+                        <span class="badge">Photoshop</span>
+                        <span class="badge">CapCut</span>
+                        <span class="badge">Agile/Scrum</span>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h3><i class="fas fa-chart-line"></i> Marketing & Strategy</h3>
+                    <div class="skill-badges">
+                        <span class="badge">Digital Marketing</span>
+                        <span class="badge">Technical SEO</span>
+                        <span class="badge">Social Media</span>
+                        <span class="badge">Paid Campaigns</span>
+                        <span class="badge">GTM Strategy</span>
+                        <span class="badge">Conversion Optimization</span>
+                        <span class="badge">Data Analytics</span>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h3><i class="fas fa-graduation-cap"></i> Certifications</h3>
+                    <div class="skill-badges">
+                        <span class="badge cert">AWS Cloud Practitioner</span>
+                        <span class="badge cert">Oracle Certified Java Programmer</span>
+                        <span class="badge cert">OWASP Top 10</span>
+                        <span class="badge cert">Snyk Top 10</span>
+                        <span class="badge cert">Security for Developers</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Let's Build Something Great Together</h2>
+            <p class="section-subtitle">Ready to transform your vision? Let's discuss your project and create something extraordinary.</p>
+
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="info-card">
+                        <i class="fas fa-envelope"></i>
+                        <h4>Email</h4>
+                        <a href="mailto:amilasilvase@gmail.com">amilasilvase@gmail.com</a>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-phone"></i>
+                        <h4>Phone</h4>
+                        <a href="tel:+971568742506">+971 56 874 2506</a>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h4>Location</h4>
+                        <p>Dubai, UAE</p>
+                        <p class="small">Available immediately for new opportunities</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-linkedin"></i>
+                        <h4>Professional Network</h4>
+                        <a href="https://linkedin.com/in/amilasilva7" target="_blank">Connect on LinkedIn</a>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Project Title">
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Tell me about your project..." rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                    <p class="form-note">I typically respond within 24 hours</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Amila Silva</h4>
+                    <p>Full-Stack Developer | Digital Marketing Expert | Cloud Architecture Specialist</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#expertise">Expertise</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Social</h4>
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/amilasilva7" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="mailto:amilasilvase@gmail.com"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Amila Silva. All rights reserved. Built with modern web technologies and a passion for excellence.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
