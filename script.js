@@ -112,63 +112,45 @@ function updateActiveNavLink(clickedLink) {
     clickedLink.classList.add('active');
 }
 
-// ===== CONTACT FORM =====
+// ===== CONTACT FORM - WhatsApp Integration =====
 function initializeContactForm() {
     const form = document.getElementById('contactForm');
+    const whatsappNumber = '971568742506'; // +971 56 874 2506
 
     if (form) {
         form.addEventListener('submit', function(e) {
             e.preventDefault();
 
-            const formData = {
-                name: form.querySelector('input[type="text"]').value,
-                email: form.querySelector('input[type="email"]').value,
-                projectTitle: form.querySelector('input[type="text"]:nth-of-type(2)').value || 'Not specified',
-                message: form.querySelector('textarea').value,
-                timestamp: new Date().toISOString()
-            };
+            // Get message from textarea
+            const message = document.getElementById('whatsappMessage').value.trim();
 
-            // Log form data (in production, this would send to a server)
-            console.log('Contact Form Submission:', formData);
+            if (!message) {
+                alert('Please enter a message');
+                return;
+            }
 
-            // Show success message
-            showFormSuccess();
+            // Encode message for URL
+            const encodedMessage = encodeURIComponent(message);
 
-            // Reset form
-            form.reset();
+            // Construct WhatsApp URL
+            const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+
+            // Log for analytics
+            console.log('WhatsApp Message Sent:', {
+                message: message,
+                timestamp: new Date().toISOString(),
+                whatsappURL: whatsappURL
+            });
+
+            // Open WhatsApp in new window
+            window.open(whatsappURL, '_blank');
+
+            // Reset form after opening WhatsApp
+            setTimeout(() => {
+                form.reset();
+            }, 500);
         });
     }
-}
-
-function showFormSuccess() {
-    const formWrapper = document.querySelector('.contact-form-wrapper');
-    const successMessage = document.createElement('div');
-
-    successMessage.className = 'success-message';
-    successMessage.innerHTML = `
-        <div style="
-            position: fixed;
-            top: 100px;
-            right: 30px;
-            background: linear-gradient(135deg, #06d6a0 0%, #00d4ff 100%);
-            color: #0a0e27;
-            padding: 1.5rem 2rem;
-            border-radius: 10px;
-            font-weight: 700;
-            box-shadow: 0 10px 30px rgba(6, 214, 160, 0.4);
-            z-index: 2000;
-            animation: slideInRight 0.5s ease;
-        ">
-            ✓ Message sent! I'll get back to you within 24 hours.
-        </div>
-    `;
-
-    document.body.appendChild(successMessage);
-
-    // Remove success message after 5 seconds
-    setTimeout(() => {
-        successMessage.remove();
-    }, 5000);
 }
 
 // ===== SCROLL ANIMATIONS =====
@@ -187,8 +169,8 @@ function initializeScrollAnimations() {
         });
     }, observerOptions);
 
-    // Observe all skill badges and expertise cards
-    document.querySelectorAll('.badge, .expertise-card, .highlight-card, .timeline-content').forEach(el => {
+    // Observe all skill badges, expertise cards, and portfolio cards
+    document.querySelectorAll('.badge, .expertise-card, .highlight-card, .timeline-content, .portfolio-card').forEach(el => {
         observer.observe(el);
     });
 }
